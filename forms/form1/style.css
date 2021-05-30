@@ -94,7 +94,7 @@ input {
 }
 
 .container {
-	background-color: #fff;
+	background-color:#fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -147,7 +147,10 @@ input {
 		z-index: 5;
 	}
 }
-
+.mblbtn{
+	display: none;
+	
+}
 .overlay-container {
 	position: absolute;
 	top: 0;
@@ -215,6 +218,7 @@ input {
 
 .social-container {
 	margin: 20px 0;
+	cursor: pointer;
 }
 
 .social-container a {
@@ -231,3 +235,37 @@ input {
 .social-container a:hover{
     opacity: .7;
 }
+
+
+@media only screen and (max-width: 600px) {
+	body {
+		
+	  background-color: #FFF;
+	  height: 100%;
+	}
+
+	.sign-in-container {
+		width: 100%;
+	}
+	.mblbtn{
+		display: block;
+		margin-top: 20px;
+		
+	}
+	.sign-mbl{
+		z-index: -4;
+	}
+	.sign-up-container {
+		left: 0;
+		width: 100%;
+		opacity: 1;
+		z-index: 1;
+	}
+	.overlay-container {
+		display: none;
+	}
+	form a span{
+		color: red;
+	}
+
+  }
