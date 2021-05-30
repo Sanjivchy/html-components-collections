@@ -16,6 +16,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     animation: fill 0.9s ease forwards 1s;
+    
 }
 
 #logo path{
