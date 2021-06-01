@@ -46,11 +46,13 @@ body{
     transition: 0.8s;
 }
 
-.btn1::before, .btn3::before{
+ .btn3::before{
 top: 0;
 border-radius: 0 0 50% 50%;
 }
-
+.btn1::before {
+    top: 0;
+}
 .btn2::before, .btn4::before{
     top: 0;
     border-radius: 50% 50% 0 0;
