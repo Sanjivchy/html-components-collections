@@ -40,6 +40,7 @@ header{
 
 }
 
+
 /* nav menu button */
 .menu-btn{
     position: relative;
@@ -51,41 +52,50 @@ header{
     display: none;
     z-index: 1;
 }
-.menu-btn__lines,
-.menu-btn__lines::before,
-.menu-btn__lines::after{
+.menu-btn__lines{
     width: 1.5rem;
     height: 0.1rem;
     background-color: #111111;
     transition: all 0.5s ease-in-out;
 }
-.menu-btn__lines::before,
 .menu-btn__lines::after {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #111111;
+    transition: all 0.5s ease-in-out;
     content: "";
     position: absolute;
+    transform: translateY(0.5rem);
+
 }
 .menu-btn__lines::before {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #111111;
+    transition: all 0.5s ease-in-out;
+    content: "";
+    position: absolute;
     transform: translateY(-0.5rem);
 }
 
-.menu-btn__lines::after {
-    transform: translateY(0.5rem);
-}
+
 /* animation */
-.menu-btn.open .menu-btn__lines {
+.open .menu-btn__lines {
+
     transform: translateX(2rem);
     background-color: transparent;
 }
 
-.menu-btn.open .menu-btn__lines::before {
+.open .menu-btn__lines::before {
     transform: rotate(45deg) translate(-1.5rem, 1.5rem);
     background-color: #ffffff;
 }
 
-.menu-btn.open .menu-btn__lines::after {
+.open .menu-btn__lines::after {
     transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
     background-color: #ffffff;
 }
+
 
 @media (max-width: 767px) {
     
@@ -131,5 +141,6 @@ header{
     .menu-items li a:hover {
         color: #111111;
     }
+    
 
 }
